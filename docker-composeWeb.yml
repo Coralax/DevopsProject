@@ -1,38 +1,37 @@
-version '3'
+version: '3'
 
-services
+services:
 
+  jenkins:
 
-  jenkins
+    image: jenkins/jenkins
 
-    image jenkinsjenkins
+    container_name: JenkinsSRV
 
-    container_name JenkinsSRV
+    volumes:
 
-    volumes
+      - ~/CSWebsite:/var/jenkins_home/Website
 
-      - ~CSWebsitevarjenkins_homeWebsite
+    user: root
 
-    ports
+    ports:
 
-      - 80858080
+      - 8085:8080
 
-      - 5000150000
+      - 50001:50000
 
-  tomcat
+  tomcat:
 
-    image tomcat
+    image: tomcat
 
-    container_name TomcatSRV
+    container_name: TomcatSRV
 
-    volumes
+    volumes:
 
-      - ~CSWebsiteusrlocaltomcatwebappsCSWeb
+      - ~/CSWebsite:/usr/local/tomcat/webapps/CSWeb
 
-    ports
+    ports:
 
-      - 80868080
-
-
+      - 8086:8080
 
   
