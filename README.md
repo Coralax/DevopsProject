@@ -6,7 +6,7 @@
 4. To access TomcatSRV interactively: docker exec -it TomcatSRV /bin/bash
 5. To access JenkinsSRV interactively: docker exec -it JenkinsSRV /bin/bash
 6. Jenkins server is mapped to port 8085: http://localhost:8085/ (UI)
-7. CS Web runs on a Tomcat server and mapped to port 8086:  http://localhost:8086/CSWeb/ or http://<IP>:8086/CSWeb/ 
+7. CS Web runs on a Tomcat server and mapped to port 8086:  http://localhost:8086/CSWeb/ or http://<IP_add>:8086/CSWeb/ 
 
 Mounted directories:
 ~/CSWebsite in the host machine is mounted to /var/jenkins_home/Website of the Jenkins container
