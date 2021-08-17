@@ -1,6 +1,6 @@
 
 
-1. cd to the directory where docker-composeCS.yml is located
+1. cd to docker-composeCS.yml file directory location
 2. docker-compose -f docker-composeCS.yml up
 3. Check that the containers are up and running: docker ps 
 4. To access TomcatSRV interactively: docker exec -it TomcatSRV /bin/bash
