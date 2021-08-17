@@ -9,5 +9,5 @@
 7. CS Web runs on a Tomcat server and mapped to port 8086:  http://localhost:8086/CSWeb/ or http://<IP_add>:8086/CSWeb/ 
 
 Mounted directories:
-~/CSWebsite in the host machine is mounted to /var/jenkins_home/Website of the Jenkins container
-~/CSWebsite in the host machine is mounted to /usr/local/tomcat/webapps/CSWeb of the Tomcat container
+Directory ~/CSWebsite in the host machine should be mouted to /var/jenkins_home/Website in the Jenkins container
+Directory ~/CSWebsite in the host machine should be mouted to /usr/local/tomcat/webapps/CSWeb in the Tomcat container
